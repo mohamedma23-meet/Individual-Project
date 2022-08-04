@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Design by foolishdeveloper.com -->
+    <title>Sign in</title>
+ 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <!--Stylesheet-->
+
+<style media="screen">
+body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+ 
+    50% {
+        background-position: 100% 50%;
+    }
+ 
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+    .card {
+      max-width: 300px;
+      margin: auto;
+      text-align: center;
+      font-family: arial;
+      border-radius: 25px;
+
+    }
+
+    img{
+        border-radius: 25px;
+
+    }
+
+
+    .price {
+      color: grey;
+      font-size: 22px;
+    }
+
+    .card button {
+      border: none;
+      outline: 0;
+      padding: 12px;
+      color: white;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+      font-size: 18px;
+        border-radius: 25px;
+
+    }
+
+    .card button:hover {
+      opacity: 0.7;
+    }
+
+    .Row {
+    display: table;
+    
+    }
+    .Column {
+        display: table-cell;
+    }
+
+    </style>
+</head>
+<body>
+
+    <center>
+    <h1>Welcome, {{name}} </h1>      
+    
+
+
+    <div class="d-flex flex-column justify-content-center w-100 h-100"></div>
+    <div class="card">
+      <img src="https://i.discogs.com/3MJ65eRp84kHSnMYH2Z_zGoUeRJeEfR9pG66C1uT6hI/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0MDEz/NzM5LTE2NTg5Mjcz/OTktMTQyOC5qcGVn.jpeg" alt="1112" style="width:200px">
+      <h1>Halsey – So Good (Stripped)</h1>
+      <p class="price">$19.99</p>
+      <p><button method="POST" action="/add_to_cart1">Add to Cart</button></p>
+    </div>
+
+    <div class="card">
+      <img src="https://i.discogs.com/BUFVaDAAuWtMwNx3NgMa9UD5NOiGH2jG0DoD3c7VQr8/rs:fit/g:sm/q:90/h:596/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0NDM1/LTEzNjAwOTMxOTgt/MTU3NS5qcGVn.jpeg" alt="1112" style="width:200px">
+      <h1>Boards Of Canada – Geogaddi</h1>
+      <p class="price">$24.99</p>
+      <p><button method="POST" action="/add_to_cart2">Add to Cart</button></p>
+    </div>
+
+    <div class="card">
+      <img src="https://i.discogs.com/RujXpx7IDYkQweZsmv6Ju5tZn8bm9YjZWGRHMV3UTyE/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTcyNTA0/OTEtMTYwMjY2MjM3/NS0xNjUxLmpwZWc.jpeg" alt="1112" style="width:200px">
+      <h1>Tame Impala – Currents</h1>
+      <p class="price">$19.99</p>
+      <p><button method="POST" action="/add_to_cart3">Add to Cart</button></p>
+    </div>
+
+</body>
+</html>
