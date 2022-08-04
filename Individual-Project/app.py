@@ -68,6 +68,15 @@ def shop():
 	user = db.child("Users").child(login_session['user']['localId']).get().val()
 	return render_template("shop.html",name=user["name"])
 
+@app.route('/signout')
+def signout():
+	login_session['user'] = None
+	auth.current_user = None
+	return redirect(url_for('signin'))
+
+
+
+
 
 
 if __name__ == '__main__':
